@@ -62,7 +62,7 @@ resource "google_data_fusion_instance" "datafusion_instance6" {
 #data "google_app_engine_default_service_account" "default" {
 #}
 
-data "google_client_config" "current" {}
+/*data "google_client_config" "current" {}
 
 provider "cdap" {
   host  = "${google_data_fusion_instance.datafusion_instance6.service_endpoint}/api/"
@@ -186,7 +186,7 @@ resource "cdap_application" "pipeline" {
 })
 
 depends_on = [google_data_fusion_instance.datafusion_instance6]
-}
+}*/
 
 
 
